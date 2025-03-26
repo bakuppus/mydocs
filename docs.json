@@ -1,102 +1,142 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "willow",
+  "name": "Kubelancer",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#0D71D5",
+    "light": "#55D799",
+    "dark": "#0D9373"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png",
+    "href": "https://kubelancer.com"
+  },
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
+    "dropdowns": [
+         {
+        "dropdown": "AWS",
+        "icon": "block-brick",
+        "description": "Amazon Web Services",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Cloud",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "content/cloud/aws/compute",
+              "content/cloud/aws/storage",
+              "content/cloud/aws/database",
+              "content/cloud/aws/networking",
+              "content/cloud/aws/security",
+              "content/cloud/aws/management",
+              "content/cloud/aws/developer"
+
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "dropdown": "Azure",
+        "icon": "block-brick",
+        "description": "Microsoft Azure",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Cloud",
             "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "content/cloud/azure/compute",
+              "content/cloud/azure/storage",
+              "content/cloud/azure/database",
+              "content/cloud/azure/networking",
+              "content/cloud/azure/security",
+              "content/cloud/azure/management",
+              "content/cloud/azure/developer"
             ]
           }
         ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
+      },
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+        "dropdown": "GCP",
+        "icon": "block-brick",
+        "description": "Google Cloud Platform",
+        "groups": [
+          {
+            "group": "Cloud",
+            "pages": [
+              "content/cloud/gcp/compute",
+              "content/cloud/gcp/storage",
+              "content/cloud/gcp/database",
+              "content/cloud/gcp/networking",
+              "content/cloud/gcp/security",
+              "content/cloud/gcp/management",
+              "content/cloud/gcp/developer"
+            ]
+          }
+        ]
+      },
+      {
+        "dropdown": "Kubernetes",
+        "icon": "block-brick",
+        "description": "Kubernetes",
+        "groups": [
+          {
+            "group": "Cloud",
+            "pages": [
+              "content/cloud/kubernetes/intro",
+              "content/cloud/kubernetes/architecture",
+              "content/cloud/kubernetes/objects",
+              "content/cloud/kubernetes/cluster",
+              "content/cloud/kubernetes/networking",
+              "content/cloud/kubernetes/storage",
+              "content/cloud/kubernetes/security",
+              "content/cloud/kubernetes/management",
+              "content/cloud/kubernetes/developer"
+            ]
+          }
+        ]
+      },
+      {
+        "dropdown": "Docker",
+        "icon": "block-brick",
+        "description": "Docker",
+        "groups": [
+          {
+            "group": "Cloud",
+            "pages": [
+              "content/cloud/docker/intro",
+              "content/cloud/docker/architecture",
+              "content/cloud/docker/objects",
+              "content/cloud/docker/cluster",
+              "content/cloud/docker/networking",
+              "content/cloud/docker/storage",
+              "content/cloud/docker/security",
+              "content/cloud/docker/management",
+              "content/cloud/docker/developer"
+            ]
+          }
+        ]
+      },
+      {
+        "dropdown": "DevOps",
+        "icon": "block-brick",
+        "description":
+          "DevOps Development (Dev) and IT operations (Ops)",
+        "groups": [
+          {
+            "group": "DevOps",
+            "pages": [
+              "content/devops/intro",
+              "content/devops/cicd",
+              "content/devops/monitoring",
+              "content/devops/automation",
+              "content/devops/infrastructure",
+              "content/devops/security",
+              "content/devops/developer"
+            ]
+          }
+
+    ]
   }
+]
 }
+}
+
